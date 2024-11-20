@@ -3,16 +3,17 @@
 #include <Windows.h>
 #include <iomanip>
 #include <cmath>
-#include <string>
-
 using namespace std;
 
 int main() {
-    cout << char(201) << string(60, (char)205) << char(187) << endl;
-    cout << char(186) << "\t\t\t   Vremena goda\t\t\t     " << char(186) << endl;
-    cout << char(204) << string(20, (char)205) << char(203) << string(20, (char)205) << char(203) << string(18, (char)205) << char(182) << endl;
-
-//    cout<<"\n"<<(char)201<<(char)205<<(char)205<<(char)205<<(char)187 <<
-
+    const double pi = 3.14;
+    double L;
+    cout << "L: ";
+    cin >> L;
+    system("cls");
+    double R = L / (2 * pi);
+    double S = pi * pow(R, 2);
+    cout << "R: " << R << endl;
+    cout << "S: " << S << endl;
     return 0;
 }
