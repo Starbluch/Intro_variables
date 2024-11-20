@@ -2,17 +2,15 @@
 #include <conio.h>
 #include <Windows.h>
 #include <iomanip>
-#include <cmath>
-#include <string>
-
 using namespace std;
 
 int main() {
-    cout << char(201) << string(60, (char)205) << char(187) << endl;
-    cout << char(186) << "\t\t\t   Vremena goda\t\t\t     " << char(186) << endl;
-    cout << char(204) << string(20, (char)205) << char(203) << string(20, (char)205) << char(203) << string(18, (char)205) << char(182) << endl;
+    double R1 = 2.0, R2 = 4.0, R3 = 8.0;
 
-//    cout<<"\n"<<(char)201<<(char)205<<(char)205<<(char)205<<(char)187 <<
+    double R0 = 1.0 / (1.0 / R1 + 1.0 / R2 + 1.0 / R3);
+
+    cout << fixed << setprecision(6);
+    cout << "R0: " << R0 << endl;
 
     return 0;
 }
