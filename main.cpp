@@ -8,11 +8,17 @@
 using namespace std;
 
 int main() {
-    cout << char(201) << string(60, (char)205) << char(187) << endl;
-    cout << char(186) << "\t\t\t   Vremena goda\t\t\t     " << char(186) << endl;
-    cout << char(204) << string(20, (char)205) << char(203) << string(20, (char)205) << char(203) << string(18, (char)205) << char(182) << endl;
 
-//    cout<<"\n"<<(char)201<<(char)205<<(char)205<<(char)205<<(char)187 <<
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
+    cout << "Name       : ";
+    SetConsoleTextAttribute(hConsole, 14);
+    cout << "\"The war and the peace\"" << std::endl;
+    SetConsoleTextAttribute(hConsole, 7);
+    cout << "Avtor      :   L.N. Tolstoj" << endl;
+    cout << "Izdatelstvo:  Piter" << endl;
+    cout << "Pages      : ";
+    SetConsoleTextAttribute(hConsole, 5);
+    cout << "500" << endl;
     return 0;
 }
