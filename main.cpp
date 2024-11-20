@@ -8,11 +8,11 @@
 using namespace std;
 
 int main() {
-    cout << char(201) << string(60, (char)205) << char(187) << endl;
-    cout << char(186) << "\t\t\t   Vremena goda\t\t\t     " << char(186) << endl;
-    cout << char(204) << string(20, (char)205) << char(203) << string(20, (char)205) << char(203) << string(18, (char)205) << char(182) << endl;
-
-//    cout<<"\n"<<(char)201<<(char)205<<(char)205<<(char)205<<(char)187 <<
-
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, 14);
+    cout << "\"U lukomor'a dub zelenij,\n"
+            " Zlataya zep na dupe tom,\n"
+            " I dnem i nochju kot uchenij\n"
+            " vse hodit po cepi krugom\"" << endl;
     return 0;
 }
