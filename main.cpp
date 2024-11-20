@@ -13,7 +13,6 @@ int main() {
     cout << char(204) << string(15, (char)205) << char(203) << string(16, (char)205) << char(203) << string(14, (char)205) << char(203) << string(12, (char)205)<< char(182) << endl;
     cout << char(186) << "      Zima     " << char(186) << "      Vesna     " << char(186) << "     Leto     " << char(186) << "    Osen    "<< char(186) << endl;
     cout << char(200) << string(15, (char)205) << char(202) << string(16, (char)205) << char(202) << string(14, (char)205) << char(202) << string(12, (char)205)<< char(188) << endl;
-//    cout<<"\n"<<(char)201<<(char)205<<(char)205<<(char)205<<(char)187 <<
 
     return 0;
 }
